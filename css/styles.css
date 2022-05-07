@@ -1,61 +1,89 @@
-
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,400);
 
 body {
-font: normal normal 13px/16px "Open Sans", sans-serif;
-background: #dfdfdf;
+  font: normal normal 13px/16px "Open Sans", sans-serif;
+  background: #dfdfdf;
 }
 
-.container{
-padding: 20px;
-width: 300px;
-margin: 0 auto;
-margin-top: 40px;
-background: white;
-border-radius: 5px;}
+.container {
+  padding: 20px;
+  width: 300px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+h2,
+p {
+  text-align: center;
+}
 
 form {
-display: inline-block;
+  display: inline-block;
+  vertical-align: text-top;
 }
 
-input{
-padding: 4px 15px 4px 5px;
+.formcontainer {
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 12px;
+  vertical-align: bottom;
 }
 
-#button{
-display: inline-block;
-background-color:#fc999b;
-color:#ffffff;
-border-radius: 5px;
-text-align:center;
-margin-top:2px;
-padding: 5px 15px;
+input {
+  padding: 10px 15px 4px 5px;
+  font-size: 1rem;
+  font-family: serif;
 }
 
-#button:hover{
-cursor: pointer;
-opacity: .8;}
+#button {
+  background-color: #fc999b;
+  color: #ffffff;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 2px;
+  margin-left: 10px;
+  padding: 8px 20px;
+}
 
-ol {padding-left: 20px;}
-
-ol li {padding: 5px;color:#000;}
-
-ol li:nth-child(even){background: #dfdfdf;}
-
-.strike{text-decoration: line-through;}
-
-li:hover{
+#button:hover {
   cursor: pointer;
- }
+  opacity: .8;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  padding: 5px;
+  color: #000;
+}
+
+ol li:nth-child(even) {
+  background: #dfdfdf;
+}
+
+.strike {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+}
 
 .delete {
-	display: none;
+  display: none;
 }
 
-li > crossOutButton {
-	background: none;
-	border: none;
-	float: right;
-	color: #025f70;
-	font-weight: 800;
+li>crossOutButton {
+  background: none;
+  border: none;
+  float: right;
+  color: #025f70;
+  font-weight: 800;
 }
