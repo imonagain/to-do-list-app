@@ -2,7 +2,7 @@
 
 body {
   font: normal normal 13px/16px "Open Sans", sans-serif;
-  background: #dfdfdf;
+  background: #c97eb4;
 }
 
 .container {
@@ -35,11 +35,10 @@ form {
 input {
   padding: 10px 15px 4px 5px;
   font-size: 1rem;
-  font-family: serif;
 }
 
 #button {
-  background-color: #fc999b;
+  background-color: #752e85;
   color: #ffffff;
   border-radius: 5px;
   text-align: center;

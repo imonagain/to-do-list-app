@@ -9,32 +9,32 @@ function newItem() {
     $('#submit')[0].reset();
 
     if (inputValue === '') {
-      alert('You must write something!');
+        alert('You must write something!');
     } else {
-      $('#list').append(li);
+        $('#list').append(li);
     }
 
     //2. Crossing out an item from the list of items:
     function crossOut() {
-      li.toggleClass('strike');
+        li.toggleClass('strike');
     }
-  
+
     li.on('dblclick', function crossOut() {
-      li.toggleClass('strike');
+        li.toggleClass('strike');
     });
-  
+
     //3. Adding the delete button "X":
     let crossOutButton = $('<crossOutButton></crossOutButton>');
-  
+
     crossOutButton.append(document.createTextNode('X'));
     li.append(crossOutButton);
 
     crossOutButton.on('click', deleteListItem);
-  
+
     function deleteListItem() {
-      li.addClass('delete')
+        li.addClass('delete')
     }
     // 4. Reordering the items:
     $('#list').sortable();
-  
-  }
+
+}
