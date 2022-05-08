@@ -14,6 +14,16 @@ function newItem() {
         $('#list').append(li);
     }
 
+    // Add to list via enter keypress and clear input
+    $(document).keypress(function (e) {
+        var toAdd = $('input').val();
+        if (e.which == 13) {
+            $('ol').append('<li>' + toAdd + '</li>');
+            $('#submit')[0].reset();
+                e.preventDefault();
+        }
+    });
+
     //2. Crossing out an item from the list of items:
     function crossOut() {
         li.toggleClass('strike');
